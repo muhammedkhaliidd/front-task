@@ -38,7 +38,7 @@ $(function () {
   });
 
   $("#create").on("click", function () {
-    window.open("pages/create.html");
+    window.open("create.html");
   });
 
   function getRepos() {
