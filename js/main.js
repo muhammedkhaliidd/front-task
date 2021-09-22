@@ -25,8 +25,7 @@ window.onload = function () {
       data[lang].password;
     document.querySelector(`label[for="exampleCheck1"]`).textContent =
       data[lang].remember;
-    document.querySelector(`button[type="submit"]`).textContent =
-      data[lang].submit;
+    document.querySelector(`#login`).textContent = data[lang].submit;
   }
 };
 let data = {
