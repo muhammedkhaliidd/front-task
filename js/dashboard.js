@@ -45,8 +45,8 @@ $(function () {
     let myRequest = new XMLHttpRequest();
     myRequest.onload = function () {
       if (this.readyState === 4 && this.status === 200) {
-        // console.log(this.responseText);
-        // console.log(JSON.parse(this.responseText));
+        console.log(this.responseText);
+        console.log(JSON.parse(this.responseText));
       }
       let myJsonObject = JSON.parse(myRequest.responseText),
         id = "",
@@ -74,7 +74,7 @@ $(function () {
             `);
       }
     };
-    myRequest.open("GET", "../customers.json", true);
+    myRequest.open("GET", "../api/customers.json", true);
     myRequest.send();
   }
   getRepos();
