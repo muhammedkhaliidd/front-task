@@ -74,16 +74,14 @@ button.addEventListener("click", () => {
   }
 });
 
-document
-  .querySelector(`button[type="submit"]`)
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    let email = document.querySelector(`input[type="email"]`);
-    let password = document.querySelector(`input[type="password"]`);
-    if (email.value.toLowerCase() === "muhammed" && password.value === "123") {
-      alert("Welcome " + email.value);
-      window.open("dashboard.html");
-    } else {
-      alert("Wrong !\nEmail is : ' Muhammed '\nAnd Password is : ' 123 '");
-    }
-  });
+$(`#login`).on("click", function (e) {
+  e.preventDefault();
+  let email = document.querySelector(`input[type="email"]`);
+  let password = document.querySelector(`input[type="password"]`);
+  if (email.value.toLowerCase() === "muhammed" && password.value === "123") {
+    alert("Welcome " + email.value);
+    window.location = this.href;
+  } else {
+    alert("Wrong !\nEmail is : ' Muhammed '\nAnd Password is : ' 123 '");
+  }
+});
