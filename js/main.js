@@ -82,7 +82,7 @@ document
     let password = document.querySelector(`input[type="password"]`);
     if (email.value.toLowerCase() === "muhammed" && password.value === "123") {
       alert("Welcome " + email.value);
-      window.open("../pages/dashboard.html");
+      window.open("dashboard.html");
     } else {
       alert("Wrong !\nEmail is : ' Muhammed '\nAnd Password is : ' 123 '");
     }
