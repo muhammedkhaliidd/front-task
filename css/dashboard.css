@@ -239,9 +239,7 @@ body.arabic #dismiss {
 #sidebar ul ul.slide-menu {
   display: none;
 }
-#sidebar ul ul.slide-menu {
-  /* display: none; */
-}
+
 #sidebar ul ul.slide-menu a {
   background-color: #055e43e8;
   transition: 0.4s ease;
